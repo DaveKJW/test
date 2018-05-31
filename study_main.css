@@ -1,0 +1,177 @@
+﻿* {
+    /*    border-radius: 2px;*/
+    letter-spacing: 0.1em;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+/* 최상단 네비게이션바 : 로고와 유저데이터 */
+div.top_logo_and_user {
+    padding: 0 30px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: 'header header';
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 10000;
+}
+    /* 안에 있는 모든 div */
+    div.top_logo_and_user div {
+        display: inline;
+    }
+
+div.top_logo img {
+    margin-left: 10px;
+    height: 32px;
+}
+/* 오른쪽의 사용자 관련부분 */
+div.top_logo_and_user div.top_user {
+    text-align: right;
+    font-size: 11pt;
+}
+    /* 안에있는 모든 div */
+    div.top_logo_and_user div.top_user div {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: #666;
+    }
+
+        div.top_logo_and_user div.top_user div:hover {
+            color: #003666;
+        }
+/* 사용자에 관한 각 메뉴들의 공통 */
+div.user_data {
+    margin: 0 10px;
+    line-height: 30px;
+}
+
+
+/* 왼쪽 네비게이션바 : 스터디 관련 */
+div.left_concerned_study {
+    /*    border: 1px solid;*/
+    background-color: aliceblue;
+    color: black;
+    top: 50px;
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    border-right: 0.5px solid #f0f0f0;
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.05);
+    border-radius: 0px;
+    z-index: 10000;
+}
+    /* 아래의 모든 div 공통 */
+    div.left_concerned_study div {
+        cursor: pointer;
+    }
+/* NEW 부분 */
+div.left_new {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+    div.left_new p {
+        color: #999;
+        text-align: center;
+        line-height: 50px;
+        transition: all 0.3s ease;
+        font-size: 8.5pt;
+    }
+
+        div.left_new p:hover {
+            color: black;
+        }
+
+    div.left_new:hover {
+        box-shadow: 0px 1px 20px rgba(0,0,0,0.2);
+    }
+/* 스터디 찾기, 등록, 관리 공통 div */
+div.left_study {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10pt;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+    div.left_study:hover {
+        color: #003666;
+    }
+
+    div.left_study i {
+        margin-left: 3px;
+    }
+
+
+/* 본문 */
+article {
+    padding: 50px 0px 0px 50px;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+/* 본문 네비게이션바 */
+div.article_nav {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 'header header';
+}
+
+    div.article_nav div.ui {
+        text-align: right;
+    }
+
+        div.article_nav div.ui input {
+            font-size: 9pt;
+            height: 30px;
+            width: 200px;
+        }
+/* 본문 내용 */
+div.article_content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* 진행중인 스터디 */
+div.study_title {
+    padding: 20px 0;
+}
+
+    div.study_title p {
+        font-size: 13pt;
+        color: #888;
+    }
+
+div.individual_study_container {
+    display: grid;
+    grid-template-areas: 'header header header header header';
+}
+/* 스터디 하나하나의 모양 */
+div.individual_study {
+    width: 240px;
+    height: 200px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 10px 5px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.07);
+    cursor: pointer;
+}
