@@ -36,7 +36,7 @@ public:
   
     
     //Copy constructor
-    MyString(const MyString& CopySource) {
+    MyString(const MyString& CopySource) {zjhisdhfsdkjfhsdkjfhlsjk
         
         cout << "Copy constructor to copy from: " << CopySource.Buffer << endl;
         if(CopySource.Buffer != NULL)
