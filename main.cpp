@@ -5,6 +5,7 @@
 //  Created by swtak_Apple_iMac on 2018. 5. 29..
 //  Copyright © 2018년 CG2014.pnu.cse. All rights reserved.
 //
+//  footprint of sanghyeon
 
 #include <iostream>
 #include <stdlib.h>
